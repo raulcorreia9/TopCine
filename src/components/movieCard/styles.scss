@@ -1,0 +1,43 @@
+.movieCard {
+    width: 30%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #151515;
+    padding: 1rem;
+    transform: scale(0.9);
+    transition: 0.4s;
+
+    &:hover {
+        transform: scale(1);
+        cursor: pointer;
+    }
+
+    p {
+        color: #F7d354;
+    }
+
+    img, h2, p {
+        margin-bottom: 1rem;
+    }
+
+    .detailsButton {
+        background-color: #F7d354;
+        border: 2px solid #F7d354;
+        border-radius: 6px;
+        color: black;
+        padding: 1rem 0.3rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #F7d354;
+            background-color: transparent;
+            color: #F7d354;
+        }
+    }
+}

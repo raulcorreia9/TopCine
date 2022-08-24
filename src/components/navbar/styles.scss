@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #151515;
+
+    h2 a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    form {
+        display: flex;
+        gap: 8px;
+
+        input {
+            padding: 0.2rem 0.8rem;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background-color: #F7d354;
+            border: 2px solid #F7d354;
+            border-radius: 6px;
+            color: black;
+            padding: 0.3rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                border-color: #F7d354;
+                background-color: transparent;
+                color: #F7d354;
+            }
+        }
+    }
+}

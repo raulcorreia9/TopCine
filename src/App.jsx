@@ -1,15 +1,15 @@
 import { BrowserRouter, Outlet } from "react-router-dom"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/navbar"
 
 function App() {
 
   return (
     <>
-      <div className="App">
-        <BrowserRouter>
+      <div className="app-container">
+        {/* <BrowserRouter>
           <Navbar />
         </BrowserRouter>
-        <Outlet />
+        <Outlet /> */}
       </div>
     </>
   )
