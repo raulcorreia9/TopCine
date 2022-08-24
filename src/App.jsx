@@ -1,9 +1,15 @@
+import { BrowserRouter, Outlet } from "react-router-dom"
+import Navbar from "./components/Navbar"
+
 function App() {
 
   return (
     <>
-      <div>
-        <h2>TopCine</h2>
+      <div className="App">
+        <BrowserRouter>
+          <Navbar />
+        </BrowserRouter>
+        <Outlet />
       </div>
     </>
   )
