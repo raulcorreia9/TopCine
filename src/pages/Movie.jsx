@@ -42,7 +42,9 @@ const Movie = () => {
       <div className="moviePage">
         { movie && (
           <>
-            <MovieCard movie={ movie } showLink={false} className="movieCard" />
+            <div className="movieCardContainer">
+              <MovieCard movie={ movie } showLink={false} className="movieCard" />
+            </div>
             <p className="movieTagLine">{ movie.tagline }</p>
             <div className="info">
               <h3>

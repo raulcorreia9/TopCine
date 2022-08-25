@@ -4,10 +4,21 @@
     flex-direction: column;
     margin: 2rem auto;
     max-width: 600px;
+    padding: 2.5rem;
+
+    .movieCardContainer {
+        display: flex;
+        justify-content: center;
+    }
 
     .movieIcon {
         font-size: 1.5rem;
-        color: #f7d354;
+        color: #b8930c;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            color: #f7d354;
+        }
     }
     .movieCard {
         width: 80%;
@@ -22,12 +33,10 @@
             gap: 0.4rem;
         }
     }
-    .movieCard h2, p {
-        margin-bottom: 1rem;
-    }
 }
 .movieTagLine {
     text-align: center;
+    margin-top: -1.5rem;
     margin-bottom: 2rem;
     font-size: 1.3rem;
     font-weight: bold;
@@ -39,6 +48,9 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+    }
+    p {
+        margin-bottom: 1rem;
     }
 }
 .description {
