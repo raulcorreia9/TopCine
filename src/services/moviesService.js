@@ -22,4 +22,10 @@ export default {
         
         return data.results;
     },
+    getMovieById: async (id) => {
+        const res = await fetch(`${moviesURL}/${id}?language=pt-BR&api_key=${apiKey}`);
+        const data = await res.json();
+            
+        return data;
+    }
 }
