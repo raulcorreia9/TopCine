@@ -25,6 +25,10 @@ const Navbar = () => {
                 <h2>
                     <Link to="/"><BiCameraMovie />TopCine</Link>
                 </h2>
+
+                <h2>
+                    <Link to="/categories">Categories</Link>
+                </h2>
                 <form onSubmit={ handleSubmit }>
                     <input 
                         type="text" 

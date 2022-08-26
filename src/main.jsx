@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Movie from './pages/Movie';
 import Search from './pages/Search';
+import Categories from './pages/Categories';
 
 import "./index.scss"
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Movie />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
     <App />
