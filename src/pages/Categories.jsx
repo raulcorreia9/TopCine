@@ -1,14 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+//Components
 import Navbar from "../components/navbar/index";
+import MovieRow from "../components/movieRow";
+//Services
 import moviesService from "../services/moviesService";
 
 const Categories = () => {
+
+    const [movieList, setMovieList] = useState([]);
 
     useEffect(() => {
         //Requisição fetch ao service
         const loadGenres = async () => {
             const genresMovies = await moviesService.getGenresMovies();
-            console.log(genresMovies[2].items);
+            setMovieList(genresMovies);
+            // console.log(genresMovies);
         }
         
         loadGenres();
@@ -17,7 +23,11 @@ const Categories = () => {
     return (
         <>
         <Navbar />
-        <div>Categories</div>
+        <div className="categoriesContainer">
+            { movieList.map((item, key) => (
+                <MovieRow key={ key } title={ item.title } items={ item.items } />
+            )) }
+        </div>
         </>
     );
 };
