@@ -11,7 +11,7 @@ const MovieCard = ({ movie, showLink = true }) => {
   return (
     <>
         <div className='movieCard'>
-            <img src={ imageURL + "/" + movie.poster_path } alt={ movie.title } />
+            <img src={ imageURL + "/" + movie.poster_path } alt={ movie.original_title } />
             <h2>{ movie.title }</h2>
             <p>
                 <FaStar /> { movie.vote_average }

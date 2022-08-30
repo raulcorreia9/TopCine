@@ -14,7 +14,6 @@ const Categories = () => {
         const loadGenres = async () => {
             const genresMovies = await moviesService.getGenresMovies();
             setMovieList(genresMovies);
-            // console.log(genresMovies);
         }
         
         loadGenres();
