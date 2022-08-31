@@ -1,8 +1,40 @@
 .movieRow {
     margin: 30px 0px 30px 0px;
-    
+
+    &:hover {
+        .movieRowLeft, .movieRowRight {
+            opacity: 1;
+            transition: all ease 0.5s;
+        }
+    }
+
     .movieRowTitle {
         margin: 0px 0px 0px 30px;
+    }
+    .movieRowLeft, .movieRowRight {
+        color: white;
+        position: absolute;
+        width: 40px;
+        height: 304PX;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        opacity: 0;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
+    }
+    .moveRowLeft {
+        left: 0;
+    }
+    .movieRowRight {
+        right: 0;
     }
     .movieRowListArea {
         overflow-x: hidden;
