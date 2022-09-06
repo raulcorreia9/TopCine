@@ -12,9 +12,20 @@ const MovieRow = ({title, items}) => {
     const [scrollX, setScrollX] = useState(-550);
 
     const handleLeftArrow = () => {
-        let x = scrollX + 200;
+        //Rolagem de metade da tela
+        let x = scrollX + Math.round(window.innerWidth / 2);
         if(x > 0) {
             x = 0;
+        }
+        setScrollX(x);
+    }
+
+    const handleRightArrow = () => {
+        //Rolagem de metade da tela
+        let x = scrollX - Math.round(window.innerWidth / 2);
+        let listWidth = items.length * 200;
+        if((window.innerWidth - listWidth) > x) {
+            x = (window.innerWidth - listWidth) - 60;
         }
         setScrollX(x);
     }
@@ -26,7 +37,7 @@ const MovieRow = ({title, items}) => {
                 <div className="movieRowLeft" onClick={ handleLeftArrow }>
                     <BsChevronLeft style={{ fontSize: 30 }} />
                 </div>
-                <div className="movieRowRight">
+                <div className="movieRowRight" onClick={ handleRightArrow }>
                     <BsChevronRight style={{ fontSize: 30 }} />
                 </div>
                 <div className="movieRowListArea">
