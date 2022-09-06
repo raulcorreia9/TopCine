@@ -9,7 +9,7 @@
     }
 
     .movieRowTitle {
-        margin: 0px 0px 0px 40px;
+        margin-left: 40px;
     }
     .movieRowLeft, .movieRowRight {
         color: white;
@@ -39,6 +39,9 @@
     .movieRowListArea {
         overflow-x: hidden;
         padding-left: 30px;
+        .movieRowList {
+            transition: all ease 0.5s;
+        }
     }
     .movieRowItem {
         display: inline-block;

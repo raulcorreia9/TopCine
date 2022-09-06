@@ -22,7 +22,7 @@ const Categories = () => {
     return (
         <>
         <Navbar />
-        <div className="categoriesContainer">
+        <div className="categoriesContainer" style={{ marginTop: 100 }}>
             { movieList.map((item, key) => (
                 <MovieRow key={ key } title={ item.title } items={ item.items } />
             )) }
