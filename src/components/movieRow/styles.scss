@@ -1,8 +1,6 @@
 .movieRow {
     margin: 30px 0px 30px 0px;
 
-<<<<<<< HEAD
-=======
     &:hover {
         .movieRowLeft, .movieRowRight {
             opacity: 1;
@@ -10,7 +8,6 @@
         }
     }
 
->>>>>>> 3b4ec544d862f549108808c9416bc6644cdd5fe1
     .movieRowTitle {
         margin: 0px 0px 0px 40px;
     }
@@ -42,9 +39,6 @@
     .movieRowListArea {
         overflow-x: hidden;
         padding-left: 30px;
-    }
-    .movieRowList {
-        width: 99999999px;
     }
     .movieRowItem {
         display: inline-block;
