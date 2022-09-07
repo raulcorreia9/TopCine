@@ -16,8 +16,13 @@
         cursor: pointer;
     }
 
-    p {
+    .movieStarIcon {
         color: #F7d354;
+    }
+
+    .movieTitle {
+        font-size: 22px;
+        font-weight: bold;
     }
 
     img, h2, p {
@@ -42,4 +47,25 @@
             color: $lightBlue;
         }
     }
+}
+@media(max-width: 760px) {
+    .movieCard {
+        width: 50%;
+    }
+}
+@media(max-width: 580px) {
+    .movieCard .movieTitle {
+        font-size: 18px;
+    }
+}
+@media(max-width: 450px) {
+    .movieCard {
+        width: 100%;
+        .movieBasicInfoContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
 }
