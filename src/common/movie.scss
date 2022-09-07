@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .moviePage {
     color: white;
     display: flex;
@@ -13,11 +15,11 @@
 
     .movieIcon {
         font-size: 1.5rem;
-        color: #b8930c;
+        color: $lightBlue;
         transition: 0.4s;
         &:hover {
             cursor: pointer;
-            color: #f7d354;
+            color: $darkBlue;
         }
     }
     .movieCard {

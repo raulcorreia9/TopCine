@@ -1,3 +1,5 @@
+@import '../../colors.scss';
+
 .navbar {
     position: fixed;
     top: 0;
@@ -27,8 +29,8 @@
         }
 
         button {
-            background-color: #F7d354;
-            border: 2px solid #F7d354;
+            background-color: $lightBlue;
+            border: 2px solid $lightBlue;
             border-radius: 6px;
             color: black;
             padding: 0.3rem;
@@ -40,9 +42,9 @@
 
             &:hover {
                 cursor: pointer;
-                border-color: #F7d354;
+                border-color: $lightBlue;
                 background-color: transparent;
-                color: #F7d354;
+                color: $lightBlue;
             }
         }
     }
